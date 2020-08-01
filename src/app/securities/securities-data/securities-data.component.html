@@ -1,0 +1,28 @@
+<table>
+    <thead>
+        <tr>
+            <th>Symbol</th>
+            <th>Name</th>
+            <th>Base Price</th>
+            <th>Price</th>
+            <th>Bid Size</th>
+            <th>Bid Price</th>
+            <th>Ask Size</th>
+            <th>Ask Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let security of securitiesData">
+            <td>{{security.Symbol}}</td>
+            <td>{{security.Name}}</td>
+            <td>{{security.BasePrice | number:'.0-2'}}</td>
+            <td>{{security.LastPrice | number:'.0-2'}}</td>
+            <td>{{security.BidSize | number:'.0-2'}}</td>
+            <td>{{security.Bid | number:'.0-2'}}</td>
+            <td>{{security.AskSize | number:'.0-2'}}</td>
+            <td>{{security.Ask | number:'.0-2'}}</td>
+            <th><button (click)="removeSecurity(security.Symbol)"> X </button></th>
+        </tr>
+    </tbody>
+
+</table>

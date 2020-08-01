@@ -1,0 +1,8 @@
+<form #f="ngForm" (ngSubmit)="doSearch(f)">
+    <label for="search">Search:</label>
+    <input type="search" id="search" name="search" ngModel #query=ngModel required>
+    <label *ngIf="f.submitted && query.invalid">*required</label>
+    &nbsp;<button type="submit">Go</button>
+</form>
+<app-securites-list [securitiesList]="securitiesList" (onSelect)="addSecurity($event)"></app-securites-list>
+<app-securities-data [securitiesData]="securitiesArr" (onRemove)="removeSecurity($event)"></app-securities-data>

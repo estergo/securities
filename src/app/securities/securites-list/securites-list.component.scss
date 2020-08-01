@@ -1,0 +1,16 @@
+.securites-list{
+    width: 26%;
+    display: inline-block;
+    ul{
+        list-style: none;
+        border: 1px solid lightgray;
+        li{
+            padding: 10px;
+            border-bottom: 1px solid gray;
+            cursor: pointer;
+            &:hover{
+                background-color: lightgray;
+            }
+        }
+    }
+}

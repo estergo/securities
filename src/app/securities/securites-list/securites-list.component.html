@@ -1,0 +1,9 @@
+<div class="securites-list">
+    <ul>
+        <li *ngFor="let security of securitiesList" (click)="selectSecurity(security)">
+            <span>{{security.Symbol}} - </span>
+            <span>{{security.Name}}</span>
+        </li>
+    </ul>
+</div>
+

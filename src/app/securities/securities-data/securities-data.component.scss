@@ -1,0 +1,14 @@
+table{
+    display: inline-block;
+    width: 70%;
+    padding: 20px;
+    vertical-align: top;
+    margin-left: 30px;
+    tr{
+        
+        td,th {
+            border-bottom: 1px solid lightgray;
+             padding: 8px;
+        }
+    }
+}
