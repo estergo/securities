@@ -38,7 +38,7 @@ export class SecuritiesComponent implements OnInit, OnDestroy {
   }
 
   addSecurity(symbol: string) {
-    if (symbol[0] && this.securitiesData.has(symbol)) {
+    if (this.securitiesData.has(symbol)) {
       alert('Already subscribed');
     }
     else {
